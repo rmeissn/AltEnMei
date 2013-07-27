@@ -1,0 +1,336 @@
+/*
+	Theme Name: Alpha-Labs
+	Date: May 2013
+	Description: Theme for Alternative-Energienutzung.de
+	Version: 0.3.0
+	Author: Roy Meissner
+	Author URL:
+*/
+
+.carousel-container {
+	width: 100%;
+	height: 270px;
+}
+
+#carousel {
+	position: relative;
+	height: 100%;
+}
+
+.carousel-image {
+	border: 0;
+	border-radius: 5px;
+	display: block;
+}
+
+.carousel-feature {
+	position: absolute;
+	top: -1000px;
+	left: -1000px;
+	border: 2px solid #5d5d5d;
+	cursor: pointer;
+}
+
+.carousel-caption {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #000;
+}
+
+.carousel-caption p {
+	margin: 0;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 12px;
+	color: white;
+}
+
+.tracker-individual-container {
+	position: absolute;
+	bottom: 0;
+	padding: 0 0;
+	margin: 1% 0;
+}
+
+.tracker-individual-container li {
+	list-style: none;
+}
+
+.tracker-individual-blip {
+	margin: 0 3px;
+	padding: 0 3px;
+	text-align: center;
+	color: white;
+	background-color: #838383;
+	border-radius: 100%;
+}
+
+.tracker-individual-blip-selected {
+	color: white;
+	font-weight: bold;
+	background-color: #CF5C3F;
+}
+
+.tracker-summation-container{
+	display: none;
+}
+
+@keyframes showMenu {
+	from { opacity: 0; transform: translateY(-20px);}
+	to   { opacity: 1; transform: translateY(0px);}
+}
+
+@keyframes hoverButton {
+	from { opacity: 0;}
+	to   { opacity: 1;}
+}
+
+@-webkit-keyframes showMenu {
+	from { opacity: 0; -webkit-transform: translateY(-20px);}
+	to   { opacity: 1; -webkit-transform: translateY(0px);}
+}
+@-webkit-keyframes hoverButton {
+	from { opacity: 0;}
+	to   { opacity: 1;}
+}
+
+body{
+	background-color: #D8D8D8;
+	color: #000305;
+	font-size: 77.5%; /*Base Font-Size = 14px*/
+	font-family: Arial, 'Lucida Sans Unicode';
+	line-height: 1.5;
+	text-align: left;
+}
+
+a{
+	text-decoration: none;	
+}
+
+a:link, h2{
+	color: #CF5C3F;
+}
+
+a:visited{
+	color: #FFF;
+}
+
+#selected, a:hover{
+	background-color: #CF5C3F;
+	color: #FFF;
+	border-radius: 5px;
+	animation: hoverButton 0.4s;
+	-webkit-animation: hoverButton 0.4s;
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #BE4B2E), color-stop(1 , #E06D50));
+	background-image: -moz-linear-gradient(center bottom, #BE4B2E 0%, #E06D50 100%);
+}
+
+a[href^="tel"]:link {
+	pointer-events: none;
+	color: #000;
+}
+
+.body{
+	margin: 0 auto;
+	width: 90%;
+	clear: both;
+}
+
+.mainHeader nav, .mainHeader nav ul li ul, .topContent, .bottomContent, .top-sidebar, .middle-sidebar, .bottom-sidebar, .mainFooter, img{
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #8b8b8b;
+}
+
+.mainHeader nav, .mainFooter{
+	height: 40px;
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #787878), color-stop(0.5, #5E5E5E), color-stop(0.51, #707070), color-stop(1, #838383));
+	background-image: -moz-linear-gradient(center bottom, #787878 0%, #5E5E5E 50%, #707070 51%, #838383 100%);
+	background-color:#666;
+}
+
+.mainHeader nav a:link{
+	color: #FFF;
+	display: block;
+	padding: 10px 25px;
+	height: 20px;
+	text-shadow: 0 -1px 3px #202020;
+}
+
+.mainHeader nav ul{
+	list-style: none;
+	margin: 0 auto;
+}
+
+.mainHeader nav ul li{
+	float: left;
+	display: inline;
+}
+
+.mainHeader nav ul li ul{ 
+	padding: 0 0;
+	position: absolute; 
+	width: 185px;
+	background-color: #777;
+	display:none;
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #555), color-stop(1, #777));
+	background-image: -moz-linear-gradient(center bottom, #555 0%, #777 100%);
+}
+
+.mainHeader nav ul li:hover ul { 
+	display: block;
+	animation: showMenu 0.6s;
+	-webkit-animation: showMenu 0.6s;
+} 
+
+.mainHeader nav ul li ul li{
+	width: 185px;
+}
+
+.content {
+	line-height: 25px;
+	border-radius: 5px;
+	width: 70%;
+	float: left;
+}
+
+.topContent, .bottomContent{
+	background-color: #FFF;
+	padding: 3% 5%;
+	margin-top: 2%;
+}
+
+.post-info {
+	font-style: italic;
+	color: #999;
+	font-size: 89;
+}
+
+.top-sidebar, .middle-sidebar, .bottom-sidebar{
+	width: 21%;
+	float: right;
+	background-color: #FFF;
+	margin: 1.5% 0 0 3%;
+	padding: 2% 3%;
+}
+
+.mainFooter{
+	width: 100%;
+	float: left;
+	margin: 2% 0;
+}
+
+.mainFooter a:link{
+	color: #FFF;
+	display: block;
+	padding: 10px 25px;
+	height: 20px;
+}
+
+.mainFooter ul{
+	list-style: none;
+	margin: 0 0;
+}
+
+.mainFooter ul li{
+	display: inline;
+	color: #FFF;
+	float: left;
+	text-shadow: 0 -1px 3px #202020;
+}
+
+.mainFooter ul li:last-child {
+	padding: 10px 25px;
+	float: right;
+}
+
+@media screen and (min-width: 600px) and (max-width: 860px)
+{
+	.mainHeader nav{
+		height: 80px;
+	}
+
+}
+
+@media screen and (max-width: 600px)
+{
+
+	a[href^="tel"]:link, a[href^="tel"]:visited {
+		text-decoration: auto;
+		pointer-events: auto;
+		color: #CF5C3F;
+	}
+
+	a[href^="tel"]:hover{
+		color: #FFF;
+	}
+	
+	.carousel-container {
+		display: none;
+	}
+
+	.body {
+		width: 95%;
+		font-size: 95%;
+	}
+
+	.mainHeader nav{
+		margin-top: 2%;
+		height: 240px;
+	}
+
+	.mainHeader nav, .mainFooter{
+		background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #666), color-stop(0.5, #666), color-stop(0.51, #666), color-stop(1, #666));
+		background-image: -moz-linear-gradient(center bottom, #666 0%, #666 50%, #666 51%, #666 100%);
+	}
+
+	.mainHeader nav ul{
+		padding-left: 0;
+	}
+
+	.mainHeader nav ul li{
+		width: 100%;
+		margin: 0 auto;
+		text-align: center
+	}
+
+	.mainHeader nav ul li:hover ul, .post-info{ 
+		display: none;
+	} 
+
+	.mainHeader nav a:link, .mainHeader nav a:visited{
+		padding: 10px 25px;
+		height: 20px;
+		display: block;
+	}
+
+	.mainContent {
+		line-height: 25px;
+	}
+
+	.content {
+		width: 100%;
+		margin-top: 2%;
+	}
+
+	.top-sidebar, .middle-sidebar, .bottom-sidebar{
+		width: 90%;
+		margin: 2% 0 2% 0%;
+		padding: 3% 5%;
+	}
+
+	.mainFooter{
+		height: 120px;
+		display: block;
+	}
+
+	.mainFooter ul, .mainFooter li{
+		padding-left: 0;
+		width: 100%;
+	}
+
+	.mainFooter ul li:last-child {
+		float: left;
+	}
+}
+
