@@ -34,13 +34,16 @@ body {
 }
 
 /* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper .container {
+.navbar-wrapper > .container {
   padding-right: 0;
   padding-left: 0;
 }
 .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
 }
 
 
@@ -75,7 +78,7 @@ body {
 	padding-top: 8%;
 }
 
-.carousel-inner img {
+.carousel-inner > .item img {
 	float: left;
 	max-width: 30%;
 /*	max-height: 60%;*/
@@ -83,16 +86,8 @@ body {
 	border-radius: 50%;
 }
 
-
-
 /* MARKETING CONTENT
 -------------------------------------------------- */
-
-/* Pad the edges of the mobile views a bit */
-.marketing {
-  padding-right: 15px;
-  padding-left: 15px;
-}
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
@@ -129,23 +124,17 @@ body {
 
 @media (min-width: 768px) {
 
-  /* Remove the edge padding needed for mobile */
-  .marketing {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
   /* Navbar positioning foo */
   .navbar-wrapper {
     margin-top: 20px;
   }
   .navbar-wrapper .container {
     padding-right: 15px;
-    padding-left:  15px;
+    padding-left: 15px;
   }
   .navbar-wrapper .navbar {
     padding-right: 0;
-    padding-left:  0;
+    padding-left: 0;
   }
 
   /* The navbar becomes detached from the top, so we round the corners */
@@ -159,6 +148,7 @@ body {
     font-size: 21px;
     line-height: 1.4;
   }
+
   .featurette-heading {
     font-size: 50px;
   }
