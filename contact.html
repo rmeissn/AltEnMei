@@ -95,34 +95,30 @@
           <h2 class="submit-heading text-center">Schreiben Sie uns einfach über das Formular eine Mail.<br> <span class="text-muted">Diese erreicht uns ohne Umwege</span></h2>
         </div>
         <div class="col-md-12 distance">
-          <form name="sentMessage" id="contactForm" novalidate="" action="sendMail.php" method="post">
+          <form name="sentMessage" id="contactForm" action="sendMail.php" method="post">
 						<div class="col-md-6">
-            <div class="row control-group">
-              <div class="form-group col-xs-12 floating-label-form-group controls">
-                <input type="text" name="name" class="form-control" placeholder="Name *" id="name" required="" data-validation-required-message="Bitte geben Sie ihren Namen ein." aria-invalid="false">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="row control-group">
-              <div class="form-group col-xs-12 floating-label-form-group controls">
-                <input type="email" name="email" class="form-control" placeholder="E-Mail Addresse *" id="email" required="" data-validation-required-message="Bitte geben Sie ihre E-Mail Adresse ein.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="row control-group">
-              <div class="form-group col-xs-12 floating-label-form-group controls">
-                <input type="tel" name="phone" class="form-control" placeholder="Telefonnummer *" id="phone" required="" data-validation-required-message="Bitte geben Sie ihre Telefonnummer ein.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
+		          <div class="row control-group">
+		            <div class="form-group col-xs-12 floating-label-form-group controls">
+		              <input type="text" name="name" class="form-control" placeholder="Name *" id="name" required>
+		            </div>
+		          </div>
+		          <div class="row control-group">
+		            <div class="form-group col-xs-12 floating-label-form-group controls">
+		              <input type="email" name="email" class="form-control" placeholder="E-Mail Addresse *" id="email" required>
+		            </div>
+		          </div>
+		          <div class="row control-group">
+		            <div class="form-group col-xs-12 floating-label-form-group controls">
+		              <input type="tel" name="phone" class="form-control" placeholder="Telefonnummer" id="phone">
+		            </div>
+		          </div>
 						</div>
 						<div class="col-md-6">
-            <div class="row control-group">
-              <div class="form-group col-xs-12 floating-label-form-group controls">
-        		    <textarea rows="7" name="comment" class="form-control" placeholder="Ihre Nachricht an uns *" id="message" required="" data-validation-required-message="Bitte geben Sie eine Nachricht ein."></textarea>
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
+		          <div class="row control-group">
+		            <div class="form-group col-xs-12 floating-label-form-group controls">
+		      		    <textarea rows="7" name="comment" class="form-control" placeholder="Ihre Nachricht an uns *" id="message" required></textarea>
+		            </div>
+		          </div>
 						</div>
             <br>
             <div id="success"></div>
