@@ -31,6 +31,11 @@
 		<link href="CSS/carousel.css" rel="stylesheet">
 		<link href="CSS/themeChanges.css" rel="stylesheet">
 	</head>
+	<style>
+		.popover {
+			max-width: 1000px;
+		}
+	</style>
 	<!-- NAVBAR
 	================================================== -->
 	<body>
@@ -76,7 +81,7 @@
 						<div class="caro-caption">
 							<h1>Eine Terrasse, die Sie mit Energie versorgt?</h1><br>
 							<p>Kein Problem! Sie können Sitzecken oder Wintergärten bequem mit PV-Modulen als Dach verkleiden</p>
-							<p><a class="btn btn-lg btn-primary" href="#" role="button">Mehr erfahren</a></p>
+							<p><a class="btn btn-lg btn-primary" href="projects.html#terrasse" role="button">Mehr erfahren</a></p>
 						</div>
 					</div>
 				</div>
@@ -85,7 +90,7 @@
 						<div class="caro-caption">
 							<h1>Ihr Dach ist komplex?</h1><br>
 							<p>Ebenfalls kein Problem. Die Anlagen werden so geplant, das sie perfekt zu ihrem Dach passen.</p>
-							<p><a class="btn btn-lg btn-primary" href="#" role="button">Mehr erfahren</a></p>
+							<p><a class="btn btn-lg btn-primary" href="projects.html#komplex" role="button">Mehr erfahren</a></p>
 						</div>
 						<img src="Images/Carousel/2.jpg" alt="Second slide">
 					</div>
@@ -96,7 +101,7 @@
 						<div class="caro-caption">
 							<h1>Wie ist das eigentlich mit dem Aufbau?</h1><br>
 							<p>Unser kompetentes Fach-Personal übernimmt den Aufbau der Anlage auf ihrem Dach.</p>
-							<p><a class="btn btn-lg btn-primary" href="#" role="button">Mehr erfahren</a></p>
+							<p><a class="btn btn-lg btn-primary" role="button" data-toggle="modal" data-target="#aufbaukModal">Mehr erfahren</a></p>
 						</div>
 					</div>
 				</div>
@@ -115,19 +120,19 @@
 					<img class="img-circle" src="Images/photovoltaik.jpg" alt="Generic placeholder image" width="140" height="140">
 					<h2>Photovoltaik</h2>
 					<p>Schaffen Sie sich mit Hilfe ihres Daches Ihre eigene Stromversorgung oder verkaufen Sie den Strom an die Energiebetreiber. Auf welche Art Sie das auch tun: Es ist immer ein Gewinn für Sie!</p>
-					<p><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
+					<p><a class="btn btn-default" role="button" data-toggle="modal" data-target="#photovoltaikModal">Details &raquo;</a></p>
 				</div>
 				<div class="col-lg-4">
 					<img class="img-circle" src="Images/solarthermie.jpg" alt="Generic placeholder image" width="140" height="140">
 					<h2>Solarthermie</h2>
-					<p>Sie wollen wertvolle Ressourcen sparen und ihre Heizkosten minimieren? Solarthermie-Anlagen helfen ihnen dabei ihre Heizung im Sommer ganz auszuschalten.</p>
-					<p><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
+					<p>Sie wollen wertvolle Ressourcen sparen und ihre Heizkosten minimieren? Solarthermie-Anlagen helfen Ihnen dabei Ihre Heizung im Sommer ganz auszuschalten.</p>
+					<p><a class="btn btn-default" role="button" data-toggle="modal" data-target="#thermieModal">Details &raquo;</a></p>
 				</div>
 				<div class="col-lg-4">
 					<img class="img-circle" src="Images/trocknung.jpg" alt="Generic placeholder image" width="140" height="140">
 					<h2>Gebäudetrockenlegung</h2>
 					<p>Wenn Sie in einem Altbau wohnen, kennen Sie vielleicht das Problem feuchter Kellerwände. Das muss weder so sein, noch muss die Beseitigung viel kosten.</p>
-					<p><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
+					<p><a class="btn btn-default" role="button" data-toggle="modal" data-target="#trockenModal">Details &raquo;</a></p>
 				</div>
 			</div><!-- /.row -->
 
@@ -180,11 +185,77 @@
 				<p>&copy; 2014 Meissner Alternative Energienutzung</p>
 			</div>
 		</footer>
+		
+		<div class="modal fade" id="aufbaukModal" tabindex="-1" role="dialog" aria-labelledby="Photovoltaik" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title" id="myModalLabel">Photovoltaik</h4>
+					</div>
+					<div class="modal-body">
+					<p>Solarzellen bestehen aus Halbleitermaterialien – z.b. Silizium. Am Übergang von zwei unterschiedlichen Halbleiterschichten baut sich bei Lichteinstrahlung ein elektrisches Feld auf. Diese Spannung kann über zwei Metallkontakte abgegriffen werden und bei Anschluss eines Verbrauchers fließt Gleichstrom. Mehrere Solarzellen zusammen geschaltet, eingebettet auf eine Trägerschicht mit Rahmen und Glasabdeckung versehen, ergeben ein PV Modul. Die Gleichspannung wird von einem Wechselrichter in 230 V Wechselspannung umgewandelt und kann dann den Strom in Ihr hauseigenes Netz - zum Eigenverbrauch - , in einer Batterie gespeichert bzw. in öffentliche Netz eingespeist werden. Die Leistung eines PV Moduls ist ab hängig von der Sonnenintensität und der Temperatur. Bei höheren Temperaturen sinkt der Wirkungsgrad – deshalb ist eine natürliche Hinterlüftung der Module auf dem Dach zu empfehlen.<br><br>Mit einer PV Anlage sind Sie ihr eigener Stromerzeuger. Sie sparen Ihr redlich verdientes Geld, in dem Sie Ihre Stromkosten senken. Den selbst erzeugten Strom aus Ihrer PV Anlage können Sie tagsüber selbst verbrauchen, ihn in einem solaren - Batteriesystem speichern, um dann abends bzw. an sonnen-armen Tagen selbst zu nutzen. Auch eine Einspeisung ins Netz mit z.Z. noch gültiger Einspeisevergütung ist möglich. s. Energie- Einspeise- Gesetz (EEG) Gleichzeitig leisten Sie noch einen aktiven Beitrag zur Verbesserung des Klimas und der Umwelt. Architektonisch können die PV Module hervorragend in Ihr bestehendes Umfeld  eingepasst werden. 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="photovoltaikModal" tabindex="-1" role="dialog" aria-labelledby="Photovoltaik" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title" id="myModalLabel">Photovoltaik</h4>
+					</div>
+					<div class="modal-body">
+					<p>Solarzellen bestehen aus Halbleitermaterialien – z.b. Silizium. Am Übergang von zwei unterschiedlichen Halbleiterschichten baut sich bei Lichteinstrahlung ein elektrisches Feld auf. Diese Spannung kann über zwei Metallkontakte abgegriffen werden und bei Anschluss eines Verbrauchers fließt Gleichstrom. Mehrere Solarzellen zusammen geschaltet, eingebettet auf eine Trägerschicht mit Rahmen und Glasabdeckung versehen, ergeben ein PV Modul. Die Gleichspannung wird von einem Wechselrichter in 230 V Wechselspannung umgewandelt und kann dann den Strom in Ihr hauseigenes Netz - zum Eigenverbrauch - , in einer Batterie gespeichert bzw. in öffentliche Netz eingespeist werden. Die Leistung eines PV Moduls ist ab hängig von der Sonnenintensität und der Temperatur. Bei höheren Temperaturen sinkt der Wirkungsgrad – deshalb ist eine natürliche Hinterlüftung der Module auf dem Dach zu empfehlen.<br><br>Mit einer PV Anlage sind Sie ihr eigener Stromerzeuger. Sie sparen Ihr redlich verdientes Geld, in dem Sie Ihre Stromkosten senken. Den selbst erzeugten Strom aus Ihrer PV Anlage können Sie tagsüber selbst verbrauchen, ihn in einem solaren - Batteriesystem speichern, um dann abends bzw. an sonnen-armen Tagen selbst zu nutzen. Auch eine Einspeisung ins Netz mit z.Z. noch gültiger Einspeisevergütung ist möglich. s. Energie- Einspeise- Gesetz (EEG) Gleichzeitig leisten Sie noch einen aktiven Beitrag zur Verbesserung des Klimas und der Umwelt. Architektonisch können die PV Module hervorragend in Ihr bestehendes Umfeld  eingepasst werden. 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="thermieModal" tabindex="-1" role="dialog" aria-labelledby="Photovoltaik" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title" id="myModalLabel">Photovoltaik</h4>
+					</div>
+					<div class="modal-body">
+					<p>Solarzellen bestehen aus Halbleitermaterialien – z.b. Silizium. Am Übergang von zwei unterschiedlichen Halbleiterschichten baut sich bei Lichteinstrahlung ein elektrisches Feld auf. Diese Spannung kann über zwei Metallkontakte abgegriffen werden und bei Anschluss eines Verbrauchers fließt Gleichstrom. Mehrere Solarzellen zusammen geschaltet, eingebettet auf eine Trägerschicht mit Rahmen und Glasabdeckung versehen, ergeben ein PV Modul. Die Gleichspannung wird von einem Wechselrichter in 230 V Wechselspannung umgewandelt und kann dann den Strom in Ihr hauseigenes Netz - zum Eigenverbrauch - , in einer Batterie gespeichert bzw. in öffentliche Netz eingespeist werden. Die Leistung eines PV Moduls ist ab hängig von der Sonnenintensität und der Temperatur. Bei höheren Temperaturen sinkt der Wirkungsgrad – deshalb ist eine natürliche Hinterlüftung der Module auf dem Dach zu empfehlen.<br><br>Mit einer PV Anlage sind Sie ihr eigener Stromerzeuger. Sie sparen Ihr redlich verdientes Geld, in dem Sie Ihre Stromkosten senken. Den selbst erzeugten Strom aus Ihrer PV Anlage können Sie tagsüber selbst verbrauchen, ihn in einem solaren - Batteriesystem speichern, um dann abends bzw. an sonnen-armen Tagen selbst zu nutzen. Auch eine Einspeisung ins Netz mit z.Z. noch gültiger Einspeisevergütung ist möglich. s. Energie- Einspeise- Gesetz (EEG) Gleichzeitig leisten Sie noch einen aktiven Beitrag zur Verbesserung des Klimas und der Umwelt. Architektonisch können die PV Module hervorragend in Ihr bestehendes Umfeld  eingepasst werden. 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="trockenModal" tabindex="-1" role="dialog" aria-labelledby="Photovoltaik" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title" id="myModalLabel">Photovoltaik</h4>
+					</div>
+					<div class="modal-body">
+					<p>Solarzellen bestehen aus Halbleitermaterialien – z.b. Silizium. Am Übergang von zwei unterschiedlichen Halbleiterschichten baut sich bei Lichteinstrahlung ein elektrisches Feld auf. Diese Spannung kann über zwei Metallkontakte abgegriffen werden und bei Anschluss eines Verbrauchers fließt Gleichstrom. Mehrere Solarzellen zusammen geschaltet, eingebettet auf eine Trägerschicht mit Rahmen und Glasabdeckung versehen, ergeben ein PV Modul. Die Gleichspannung wird von einem Wechselrichter in 230 V Wechselspannung umgewandelt und kann dann den Strom in Ihr hauseigenes Netz - zum Eigenverbrauch - , in einer Batterie gespeichert bzw. in öffentliche Netz eingespeist werden. Die Leistung eines PV Moduls ist ab hängig von der Sonnenintensität und der Temperatur. Bei höheren Temperaturen sinkt der Wirkungsgrad – deshalb ist eine natürliche Hinterlüftung der Module auf dem Dach zu empfehlen.<br><br>Mit einer PV Anlage sind Sie ihr eigener Stromerzeuger. Sie sparen Ihr redlich verdientes Geld, in dem Sie Ihre Stromkosten senken. Den selbst erzeugten Strom aus Ihrer PV Anlage können Sie tagsüber selbst verbrauchen, ihn in einem solaren - Batteriesystem speichern, um dann abends bzw. an sonnen-armen Tagen selbst zu nutzen. Auch eine Einspeisung ins Netz mit z.Z. noch gültiger Einspeisevergütung ist möglich. s. Energie- Einspeise- Gesetz (EEG) Gleichzeitig leisten Sie noch einen aktiven Beitrag zur Verbesserung des Klimas und der Umwelt. Architektonisch können die PV Module hervorragend in Ihr bestehendes Umfeld  eingepasst werden. 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- Bootstrap core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		
+		<script>
+			$('#myCarousel').carousel({
+				interval: 8000
+			})
+		</script>
 	</body>
 </html>
