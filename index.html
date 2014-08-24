@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
+		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Homepage of the Company">
@@ -17,9 +17,9 @@
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 		
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
-		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-		<script src="JS/ie10-viewport-bug-workaround.js"></script>
+		
+		<!-- Custom styles for this template -->
+		<link href="CSS/compressed.css" rel="stylesheet">
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -27,9 +27,6 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-		<!-- Custom styles for this template -->
-		<link href="CSS/carousel.css" rel="stylesheet">
-		<link href="CSS/themeChanges.css" rel="stylesheet">
 	</head>
 	<style>
 		.popover {
@@ -77,7 +74,7 @@
 			<div class="carousel-inner">
 				<div class="item active">
 					<div class="container">
-						<img src="Images/Carousel/1.jpg" alt="Bild einer Photovoltaik-Terrassenanlage">
+						<img src="Images/Carousel/1.jpg" width="300" height="300" alt="Bild einer Photovoltaik-Terrassenanlage">
 						<div class="caro-caption">
 							<h1>Eine Terrasse, die Sie mit Energie versorgt?</h1><br>
 							<p>Kein Problem! Sie können Sitzecken oder Wintergärten bequem mit PV-Modulen als Dach verkleiden</p>
@@ -92,12 +89,12 @@
 							<p>Ebenfalls kein Problem. Die Anlagen werden so geplant, das sie perfekt zu ihrem Dach passen.</p>
 							<p><a class="btn btn-lg btn-primary tool" href="projects.html#komplex" role="button" data-toggle="tooltip" data-placement="bottom" title="Zur Projektseite">Mehr erfahren</a></p>
 						</div>
-						<img src="Images/Carousel/2.jpg" alt="Bild eines Dachs mit einer Photovoltaikanlage, die kompliziert aufgebaut ist">
+						<img src="Images/Carousel/2.jpg" width="300" height="300" alt="Bild eines Dachs mit einer Photovoltaikanlage, die kompliziert aufgebaut ist">
 					</div>
 				</div>
 				<div class="item">
 					<div class="container">
-						<img src="Images/Carousel/6.jpg" alt="Bild von Dachdeckern beim Aufbau einer Photovoltaikanlage">
+						<img src="Images/Carousel/6.jpg" width="300" height="300" alt="Bild von Dachdeckern beim Aufbau einer Photovoltaikanlage">
 						<div class="caro-caption">
 							<h1>Wie ist das eigentlich mit dem Aufbau?</h1><br>
 							<p>Unser kompetentes Fach-Personal übernimmt den Aufbau der Anlage auf ihrem Dach.</p>
@@ -146,7 +143,7 @@
 					<p class="lead">Das muss nicht so sein!<br> Mit Hilfe alternativer Energien, wie Photovoltaik oder Solarthermie, können Sie Ihre Energierechnungen relativieren. Sie nutzen Ressourcen, die sowieso kostenlos sind und tun zudem etwas für die Umwelt.</p>
 				</div>
 				<div class="col-md-5">
-					<img class="featurette-image img-responsive" src="Images/money2.jpg" alt="Bild in Arbeit" width="500">
+					<img class="featurette-image img-responsive" src="Images/money2.jpg" width="500" height="500" alt="Bild in Arbeit" width="500">
 				</div>
 			</div>
 
@@ -154,7 +151,7 @@
 
 			<div class="row featurette">
 				<div class="col-md-5">
-					<img class="featurette-image img-responsive" src="Images/entspannung.jpg" alt="Bild in Arbeit" width="500">
+					<img class="featurette-image img-responsive" src="Images/entspannung.jpg" width="500" height="500" alt="Bild in Arbeit" width="500">
 				</div>
 				<div class="col-md-7">
 					<h2 class="featurette-heading">Unterstützen Sie ihr Leben.<span class="text-muted">Alternative Energien machen es Ihnen leichter</span></h2>
@@ -170,7 +167,7 @@
 					<p class="lead">Durch die Erweiterung und Optimierung Ihres Hauses mit alternativer Energie tun Sie aktiv etwas dafür, dass auch Ihre Kinder den Planeten noch so erleben können, wie Sie ihn als Kind erlebt haben. Schließlich hätten auch Sie Ihre Kindheit nicht zwischen Plastikbäumen und Hochhäusern verbringen wollen.</p>
 				</div>
 				<div class="col-md-5">
-					<img class="featurette-image img-responsive" src="Images/natur.jpg" alt="Bild eines Regendwalds im Nebel" width="500">
+					<img class="featurette-image img-responsive" src="Images/natur.jpg" width="500" height="500" alt="Bild eines Regendwalds im Nebel" width="500">
 				</div>
 			</div>
 			
@@ -291,7 +288,30 @@
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-		
+		<script>
+			/*!
+			 * IE10 viewport hack for Surface/desktop Windows 8 bug
+			 * Copyright 2014 Twitter, Inc.
+			 * Licensed under the Creative Commons Attribution 3.0 Unported License. For
+			 * details, see http://creativecommons.org/licenses/by/3.0/.
+			 */
+
+			// See the Getting Started docs for more information:
+			// http://getbootstrap.com/getting-started/#support-ie10-width
+
+			(function () {
+				'use strict';
+				if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+					var msViewportStyle = document.createElement('style')
+					msViewportStyle.appendChild(
+						document.createTextNode(
+						  '@-ms-viewport{width:auto!important}'
+						)
+					)
+					document.querySelector('head').appendChild(msViewportStyle)
+				}
+			})();
+		</script>
 		<script>
 			$('#myCarousel').carousel({
 				interval: 8000

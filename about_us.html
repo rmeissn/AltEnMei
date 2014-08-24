@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
+		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="About the Company">
@@ -15,11 +15,11 @@
 
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
-			<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
-		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-		<script src="JS/ie10-viewport-bug-workaround.js"></script>
+		
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		
+		<!-- Custom styles for this template -->
+		<link href="CSS/compressed.css" rel="stylesheet">
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -27,9 +27,6 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-		<!-- Custom styles for this template -->
-		<link href="CSS/carousel.css" rel="stylesheet">
-		<link href="CSS/themeChanges.css" rel="stylesheet">
 	</head>
 	<!-- NAVBAR
 	================================================== -->
@@ -72,7 +69,7 @@
 					<ul class="timeline">
 						<li>
 							<div class="timeline-image">
-								<img class="img-circle img-responsive" src="Images/sonne.jpg" alt="Bild einer Sonne">
+								<img class="img-circle img-responsive" src="Images/sonne.jpg" width="160" height="160" alt="Bild einer Sonne">
 							</div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
@@ -86,7 +83,7 @@
 						</li>
 						<li class="timeline-inverted">
 							<div class="timeline-image">
-								<img class="img-circle img-responsive" src="Images/photovoltaik.jpg" alt="Bild einer Photovoltaik-Anlage in der Sonne">
+								<img class="img-circle img-responsive" src="Images/photovoltaik.jpg" width="329" height="329" alt="Bild einer Photovoltaik-Anlage in der Sonne">
 							</div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
@@ -100,7 +97,7 @@
 						</li>
 						<li>
 							<div class="timeline-image">
-								<img class="img-circle img-responsive" src="Images/regen.jpg" alt="Bild von Regen auf der Straße">
+								<img class="img-circle img-responsive" src="Images/regen.jpg" width="419" height="419" alt="Bild von Regen auf der Straße">
 							</div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
@@ -128,7 +125,7 @@
 						</li>
 						<li>
 							<div class="timeline-image">
-								<img class="img-circle img-responsive" src="Images/trocknung2.jpg" alt="Bild einer Backsteinwand">
+								<img class="img-circle img-responsive" src="Images/trocknung2.jpg" width="300" height="300" alt="Bild einer Backsteinwand">
 							</div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
@@ -164,5 +161,29 @@
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script>
+			/*!
+			 * IE10 viewport hack for Surface/desktop Windows 8 bug
+			 * Copyright 2014 Twitter, Inc.
+			 * Licensed under the Creative Commons Attribution 3.0 Unported License. For
+			 * details, see http://creativecommons.org/licenses/by/3.0/.
+			 */
+
+			// See the Getting Started docs for more information:
+			// http://getbootstrap.com/getting-started/#support-ie10-width
+
+			(function () {
+				'use strict';
+				if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+					var msViewportStyle = document.createElement('style')
+					msViewportStyle.appendChild(
+						document.createTextNode(
+						  '@-ms-viewport{width:auto!important}'
+						)
+					)
+					document.querySelector('head').appendChild(msViewportStyle)
+				}
+			})();
+		</script>
 	</body>
 </html>
