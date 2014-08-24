@@ -56,4 +56,6 @@
 	}else{
 		echo "Beim versenden der Mail ist ein Fehler aufgetreten, der nicht an Ihnen liegt. Teilen Sie uns dies bitte auf einem anderem Weg mit, damit wir diesen beheben können."; 
 	}
+	header("Location: http://www.google.de");
+	exit();
 ?>
