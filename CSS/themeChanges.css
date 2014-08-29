@@ -136,6 +136,106 @@ a {
     margin-bottom: 0;
 }
 
+.projects {
+	margin-top: 150px;
+}
+
+.tel, .fax {
+	margin-top: 45px;
+}
+
+.mail {
+	margin-top: 65px;
+}
+
+@media(max-width:350px){
+	.navbar-brand{
+		padding-left: 0;
+		padding-right: 0;
+		font-size: 13px;
+	}
+}
+
+@media(min-width:350px) and (max-width:430px){
+	.navbar-brand{
+		padding-left: 0;
+		padding-right: 0;
+		font-size: 15px;
+	}
+}
+
+@media(max-width:768px) {
+
+	#myCarousel {
+		display: none;
+	}
+	
+	.mobil {
+		margin-top: 80px;
+	}
+	
+	.featurette-image {
+		padding-top: 20px;
+   	padding-bottom: 20px;
+	}
+	
+	.projects {
+		margin-top: 50px;
+	}
+	
+	.featurette-divider {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+@media(min-width:768px) and (max-width:992px) {
+
+	.featurette-image {
+    	padding-top: 20px;
+    	padding-bottom: 20px;
+    	margin-top: 0;
+  }
+  
+ 	.projects {
+		margin-top: 70px;
+	}
+	
+	.featurette-divider {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+@media(min-width:992px) and (max-width:1200px) {
+	
+	.featurette-image {
+    	padding-top: 110px;
+  }
+  
+  .projects {
+		margin-top: 70px;
+	}
+	
+	.featurette-divider {
+		/*margin-top: 60px;*/
+		margin-bottom: 20px;
+	}
+}
+
+@media(max-width:650px){
+	iframe {
+		width: 100%;
+	}
+}
+
+@media(max-width:1200px){
+		.tel, .fax, .mail {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+}
+
 @media(min-width:768px) {
     .timeline:before {
         left: 50%;
