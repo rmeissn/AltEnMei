@@ -88,7 +88,7 @@
 					<h2 class="submit-heading text-center">Schreiben Sie uns einfach über das Formular eine Mail<br> <span class="text-muted">Diese erreicht uns ohne Umwege</span></h2>
 				</div>
 				<div class="col-md-12 distance">
-					<form name="sentMessage" id="contactForm" action="sendMail.php" method="post">
+					<form name="sentMessage" id="contactForm">
 						<div class="col-md-6">
 							<div class="row control-group">
 								<div class="form-group col-xs-12 floating-label-form-group controls">
@@ -113,12 +113,10 @@
 								</div>
 							</div>
 						</div>
-						<br>
-						<div id="success"></div>
 						<div class="row">
 							<div class="form-group col-xs-12 text-center">
-								<br><br>
-								<button type="submit" class="btn btn-success btn-lg">Sende Nachricht</button>
+								<br>
+								<button id="contactSubmit" type="submit" class="btn btn-success btn-lg">Sende Nachricht</button>
 							</div>
 						</div>
 					</form>
@@ -211,6 +209,51 @@
 					document.querySelector('head').appendChild(msViewportStyle)
 				}
 			})();
+		</script>
+		<script>
+			$("#contactForm").submit(function (event){
+				
+				event.preventDefault();
+				
+        var name = $("input#name").val();
+        var email = $("input#email").val();
+        var phone = $("input#phone").val();
+        var message = $("textarea#message").val();
+        
+        $.ajax({
+            url: "./sendMail.php",
+            type: "POST",
+            data: {
+                name: name,
+                phone: phone,
+                email: email,
+                message: message
+            },
+            cache: false,
+            success: function() {
+								$('#contactSubmit')
+									.popover({
+	                	title : '<span class="fa fa-check-circle" style="color: green;"></span> Erfolgreich',
+										content : 'Ihre Nachricht wurde versandt!',
+										html : 'true',
+										trigger : 'focus'
+									})
+									.popover('show');
+
+                $('#contactForm').trigger("reset");
+            },
+            error: function(xhr, status, error) {
+                $('#contactSubmit')
+                .popover({
+                	title : '<span class="fa fa-times-circle" style="color: red;"></span> '+error,
+                	content : 'Ihre Nachricht wurde nicht versandt!<br/>Bitte versuchen Sie es später nocheinmal.',
+                	html : 'true',
+                	trigger : 'focus'
+                })
+                .popover('show');
+            }
+        });
+			});
 		</script>
 	</body>
 </html>
