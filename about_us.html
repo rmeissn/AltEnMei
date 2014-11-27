@@ -204,6 +204,13 @@
 					document.querySelector('head').appendChild(msViewportStyle)
 				}
 			})();
+			
+			// Scrolls to the selected menu item on the page
+			$('#footer a:last-child').click(function() {
+				var target = $('html');
+				$('html,body').animate({scrollTop: target.offset().top}, 1000);
+				return false;
+			});
 		</script>
 	</body>
 </html>
