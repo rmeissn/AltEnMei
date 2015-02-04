@@ -21,6 +21,10 @@
 		
 		<!-- Custom styles for this template -->
 		<link href="CSS/compressed.css" rel="stylesheet">
+		
+		<!-- Sweet Alert library -->
+		<script src="lib/sweet-alert.min.js"></script>
+    <link rel="stylesheet" href="lib/sweet-alert.css">
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -258,26 +262,12 @@
             },
             cache: false,
             success: function() {
-								$('#contactSubmit')
-									.popover({
-	                	title : '<span class="fa fa-check-circle" style="color: green;"></span> Erfolgreich',
-										content : 'Ihre Nachricht wurde versandt!',
-										html : 'true',
-										trigger : 'focus'
-									})
-									.popover('show');
-
+								swal("Versendet!", "Ihre Nachricht wurde an uns übermittelt. Wir melden uns so schnell wie möglich zurück.", "success");
+								
                 $('#contactForm').trigger("reset");
             },
             error: function(xhr, status, error) {
-                $('#contactSubmit')
-                .popover({
-                	title : '<span class="fa fa-times-circle" style="color: red;"></span> '+error,
-                	content : 'Ihre Nachricht wurde nicht versandt!<br/>Bitte versuchen Sie es später nocheinmal.',
-                	html : 'true',
-                	trigger : 'focus'
-                })
-                .popover('show');
+                swal("Fehler!", "Ihre Nachricht konnte nicht verschickt werden. Bitte versuchen sie es später nocheinmal, oder kontaktieren sie uns über andere Wege.", "error");
             }
         });
 			});
