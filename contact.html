@@ -12,7 +12,7 @@
 	<title>Meissner Alternative Energienutzung - Kontakt</title>
 
 	<!-- Bootstrap -->
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<!-- Custom styles for this template -->
 	<link rel="stylesheet" type="text/css" href="CSS/compressed.css" defer>
@@ -132,19 +132,22 @@
 						<br>
 						<br> Besuchen Sie uns in:
 						<br>
-						<br> Kretzschmarstraße 24
-						<br> 04571 Rötha (OT Mölbis)
-						<br> Deutschland
+						<a href="https://maps.google.com/maps?ll=51.19212,12.49857&z=16&t=m&hl=de&gl=DE&mapclient=embed&cid=13431590870860514408" target="_blank" data-toggle="tooltip" data-placement="right" title="zu Google Maps" class="tool">
+							<br> Kretzschmarstraße 24
+							<br> 04571 Rötha (OT Mölbis)
+							<br> Deutschland
+					  </a>
 						<br>
 						<br>
 						<strong>Sie können sich auch nach Terminvereinbarung unsere Ausstellung ansehen:</strong>
 						<br>
-						<br> Hainer-Straße 8
-						<br> 04571 Rötha (OT Espenhain)
-						<br> Deutschland
+						<a href="https://maps.google.com/maps?ll=51.192347,12.462482&z=16&t=m&hl=de&gl=DE&mapclient=embed&q=Hainer%20Str.%208%2004571%20R%C3%B6tha" target="_blank" data-toggle="tooltip" data-placement="right" title="zu Google Maps" class="tool">
+							<br> Hainer-Straße 8
+							<br> 04571 Rötha (OT Espenhain)
+							<br> Deutschland
+						</a>
 					</address>
-					<iframe width="600" height="470" frameborder="0" class="col-md-8" allowfullscreen src="http://umap.openstreetmap.fr/de/map/alternative-energienutzung-meissner_343985?scaleControl=true&miniMap=true&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=false&searchControl=true&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&fullscreenControl=true&locateControl=true&measureControl=false&editinosmControl=false#14/51.1937/12.4817"></iframe>
-					<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2500.4595149245406!2d12.496380315715696!3d51.192183979584584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4171be877cf0877d%3A0xba6698bbc2054468!2sMeissner+Alternative+Energienutzung!5e0!3m2!1sde!2sde!4v1448454929430" width="600" height="470" frameborder="0" class="col-md-8"></iframe> -->
+					<iframe width="600" height="470" frameborder="0" class="col-md-8" allowfullscreen src="https://umap.openstreetmap.fr/de/map/alternative-energienutzung-meissner_343985?scaleControl=true&miniMap=true&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=false&searchControl=true&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&fullscreenControl=true&locateControl=true&measureControl=false&editinosmControl=false#14/51.1937/12.4817" loading="lazy"></iframe>
 				</div>
 			</div>
 		</div>
@@ -235,7 +238,7 @@
 
 	<!-- Javascript Frameworks-->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" defer></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.js"></script>
 	<script type="application/javascript">
 		/*!
@@ -260,6 +263,8 @@
 				document.querySelector('head').appendChild(msViewportStyle)
 			}
 		})();
+
+		$('.tool').tooltip();
 
 		// Scrolls to the selected menu item on the page
 		$('#gotoTop').click(function() {
